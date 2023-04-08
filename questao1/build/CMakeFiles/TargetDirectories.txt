@@ -1,0 +1,3 @@
+/home/rodrigo/Desktop/blob/lp1/questao1/build/CMakeFiles/program.dir
+/home/rodrigo/Desktop/blob/lp1/questao1/build/CMakeFiles/edit_cache.dir
+/home/rodrigo/Desktop/blob/lp1/questao1/build/CMakeFiles/rebuild_cache.dir
