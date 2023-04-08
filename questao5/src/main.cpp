@@ -1,11 +1,3 @@
-// Escreva uma programa que lê um vetor A e um valor “x”. O algoritmo
-// deve informar se existe uma combinação de elementos no vetor A, cuja
-// a soma seja igual a “x”, ou seja, se existe imprima "Sim", caso contrário
-// "Não". Use a biblioteca STL para criar o vetor.
-// Ex.1: vetorA = {2, 8, 3, 7} e x = 5 saída “Sim”, pois 2+3=5
-// Ex.2: vetorA = {2, 8, 3, 7, 21} e x = 19 saída “Não”
-// Ex.3: vetorA = {2, 50, 8, 3, 7, 22} e x = 18 saída “Sim”, pois 8+3+7=18
-
 #include <iostream>
 #include <vector>
 
