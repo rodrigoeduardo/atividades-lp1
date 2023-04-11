@@ -29,3 +29,7 @@ void Pessoa::setIdade(string idade) {
 void Pessoa::setAltura(double altura) {
     this->altura = altura;
 }
+
+bool Pessoa::operator>(Pessoa p) {
+    return this->idade > p.getIdade();
+}

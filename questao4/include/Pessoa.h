@@ -19,6 +19,7 @@ public:
     void setNome(string nome);
     void setIdade(string idade);
     void setAltura(double altura);
+    bool operator>(Pessoa p);
 };
 
 #endif

@@ -9,10 +9,6 @@ T maior(T a, T b) {
     return (a > b) ? a : b;
 }
 
-bool operator>(Pessoa a, Pessoa b) {
-    return a.getIdade() > b.getIdade();
-}
-
 ostream& operator<<(ostream& os, Pessoa pessoa) {
     os << "Nome: " << pessoa.getNome() << endl;
     os << "Idade: " << pessoa.getIdade() << endl;
