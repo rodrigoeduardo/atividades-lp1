@@ -20,6 +20,7 @@ public:
     void setIdade(string idade);
     void setAltura(double altura);
     bool operator>(Pessoa p);
+    friend ostream& operator<<(ostream& os, Pessoa pessoa);
 };
 
 #endif

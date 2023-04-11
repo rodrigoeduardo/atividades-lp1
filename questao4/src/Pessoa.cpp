@@ -1,4 +1,5 @@
 #include "Pessoa.h"
+#include <iostream>
 
 Pessoa::Pessoa(string nome, string idade, double altura) {
     this->nome = nome;
@@ -32,4 +33,11 @@ void Pessoa::setAltura(double altura) {
 
 bool Pessoa::operator>(Pessoa p) {
     return this->idade > p.getIdade();
+}
+
+ostream& operator<<(ostream& os, Pessoa pessoa) {
+    os << "Nome: " << pessoa.getNome() << endl;
+    os << "Idade: " << pessoa.getIdade() << endl;
+    os << "Altura: " << pessoa.getAltura() << endl;
+    return os;
 }
