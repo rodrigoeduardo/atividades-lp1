@@ -3,6 +3,19 @@
 
 using namespace std;
 
+bool existeSomaIgualX(vector<int> vector, int n, int x) {
+  if (x == 0)
+    return true;
+  if (n == 0)
+    return false;
+
+  if (vector[n - 1] > x)
+    return existeSomaIgualX(vector, n - 1, x);
+
+  return existeSomaIgualX(vector, n - 1, x) ||
+    existeSomaIgualX(vector, n - 1, x - vector[n - 1]);
+}
+
 int main() {
     vector<int> vetorA;
     int x, n;
@@ -20,16 +33,10 @@ int main() {
         vetorA.push_back(valor);
     }
 
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (vetorA[i] + vetorA[j] == x) {
-                cout << "Sim" << endl;
-                return 0;
-            }
-        }
-    }
-
-    cout << "Não" << endl;
+    if (existeSomaIgualX(vetorA, n, x))
+        cout << "Sim" << endl;
+    else
+        cout << "Não" << endl;
 
     return 0;
 }
